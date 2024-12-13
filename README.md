@@ -11,6 +11,9 @@ aws configure
 python create_proxy_server.py
 
 
+sudo nano /etc/squid/squid.conf
+
+
 sudo systemctl restart squid
 
 sudo systemctl start squid
