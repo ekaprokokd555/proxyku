@@ -3,9 +3,9 @@ import time
 
 # Konfigurasi AWS
 region = 'us-east-1'  # Ganti dengan region Anda
-ami_id = 'ami-0c55b159cbfafe1f0'  # Ganti dengan AMI ID yang sesuai (misalnya Ubuntu)
+ami_id = 'ami-005fc0f236362e99f'  # Ganti dengan AMI ID yang sesuai (misalnya Ubuntu)
 instance_type = 't2.micro'  # Tipe instance, ganti sesuai kebutuhan Anda
-key_name = 'your-key-pair-name'  # Ganti dengan nama key pair yang sudah Anda buat di AWS
+key_name = 'ORA.pem'  # Ganti dengan nama key pair yang sudah Anda buat di AWS
 
 # Membuat klien EC2
 ec2 = boto3.client('ec2', region_name=region)
@@ -18,7 +18,7 @@ def create_ec2_instance():
         MinCount=1,
         MaxCount=1,
         KeyName=key_name,
-        SecurityGroupIds=['sg-xxxxxxxx'],  # Ganti dengan ID security group Anda
+        SecurityGroupIds=['sg-0df852efd3ff18104'],  # Ganti dengan ID security group Anda
         UserData='''#!/bin/bash
                     sudo apt-get update -y
                     sudo apt-get install -y squid
