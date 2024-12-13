@@ -27,10 +27,7 @@ def create_ec2_instance():
                     sudo ufw allow 3128/tcp
                     sudo ufw reload
                     echo "http_port 3128" | sudo tee -a /etc/squid/squid.conf
-                    echo "http_access deny all" | sudo tee -a /etc/squid/squid.conf
                     sudo systemctl restart squid
-                    sudo systemctl start squid
-                    sudo systemctl status squid
                     ''',  # UserData untuk instalasi dan konfigurasi Squid Proxy
         TagSpecifications=[
             {
