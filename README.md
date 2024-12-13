@@ -1,6 +1,7 @@
 RUN : 
 
 pip3 install boto3
+pip3 install aws cli
 
 python create_proxy_server.py
 
