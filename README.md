@@ -1,2 +1,8 @@
 RUN : 
 python create_proxy_server.py
+
+
+sudo systemctl restart squid
+
+sudo systemctl start squid
+sudo systemctl status squid
