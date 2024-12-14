@@ -3,7 +3,8 @@ RUN :
 pip3 install boto3
 
 
-pip3 install aws cli
+pip install awscli
+
 
 aws configure
 
@@ -17,4 +18,5 @@ sudo nano /etc/squid/squid.conf
 sudo systemctl restart squid
 
 sudo systemctl start squid
+
 sudo systemctl status squid
