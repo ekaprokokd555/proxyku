@@ -5,7 +5,7 @@ import time
 region = 'us-east-2'  # Ganti dengan region Anda
 ami_id = 'ami-036841078a4b68e14'  # Ganti dengan AMI ID yang sesuai (misalnya Ubuntu)
 instance_type = 't2.micro'  # Tipe instance, ganti sesuai kebutuhan Anda
-key_name = 'ORA'  # Ganti dengan nama key pair yang sudah Anda buat di AWS
+key_name = 'EKA'  # Ganti dengan nama key pair yang sudah Anda buat di AWS
 
 # Membuat klien EC2
 ec2 = boto3.client('ec2', region_name=region)
