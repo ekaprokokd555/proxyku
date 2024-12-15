@@ -2,7 +2,7 @@ import boto3
 import time
 
 # Konfigurasi AWS
-region = 'us-west-3'  # Ganti dengan region Anda
+region = 'us-west-1'  # Ganti dengan region Anda
 ami_id = 'ami-0657605d763ac72a8'  # Ganti dengan AMI ID yang sesuai (misalnya Ubuntu)
 instance_type = 't2.nano'  # Tipe instance, ganti sesuai kebutuhan Anda
 key_name = 'EKAA'  # Ganti dengan nama key pair yang sudah Anda buat di AWS
