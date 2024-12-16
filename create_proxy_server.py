@@ -2,10 +2,10 @@ import boto3
 import time
 
 # Konfigurasi AWS
-region = 'us-west-1'  # Ganti dengan region Anda
-ami_id = 'ami-0657605d763ac72a8'  # Ganti dengan AMI ID yang sesuai (misalnya Ubuntu)
+region = 'us-west-2'  # Ganti dengan region Anda
+ami_id = 'ami-05d38da78ce859165'  # Ganti dengan AMI ID yang sesuai (misalnya Ubuntu)
 instance_type = 't2.nano'  # Tipe instance, ganti sesuai kebutuhan Anda
-key_name = 'F'  # Ganti dengan nama key pair yang sudah Anda buat di AWS
+key_name = 'G'  # Ganti dengan nama key pair yang sudah Anda buat di AWS
 
 # Membuat klien EC2
 ec2 = boto3.client('ec2', region_name=region)
@@ -18,7 +18,7 @@ def create_ec2_instance():
         MinCount=1,
         MaxCount=1,
         KeyName=key_name,
-        SecurityGroupIds=['sg-056404d01224a8833'],  # Ganti dengan ID security group Anda
+        SecurityGroupIds=['sg-0cb17a6185098b6b0'],  # Ganti dengan ID security group Anda
         UserData='''#!/bin/bash
                     sudo apt-get update -y
                     sudo apt-get install -y squid
