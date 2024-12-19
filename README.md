@@ -11,6 +11,13 @@ aws configure
 
 python create_proxy_server.py
 
+python us2.py
+
+python us3.py
+
+python us4.py
+
+
 
 sudo nano /etc/squid/squid.conf
 
