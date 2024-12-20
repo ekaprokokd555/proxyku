@@ -18,7 +18,7 @@ def create_ec2_instance():
         MinCount=1,
         MaxCount=1,
         KeyName=key_name,
-        SecurityGroupIds=['sg-0a65ec55b1c2431c6'],  # Ganti dengan ID security group Anda
+        SecurityGroupIds=['sg-0dadff15b6dd7e6ad'],  # Ganti dengan ID security group Anda
         UserData='''#!/bin/bash
                     sudo apt-get update -y
                     sudo apt-get install -y squid
