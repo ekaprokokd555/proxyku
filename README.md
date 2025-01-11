@@ -17,6 +17,10 @@ python us3.py
 
 python us4.py
 
+python uk.py
+
+python tokyo.py
+
 
 
 sudo nano /etc/squid/squid.conf
