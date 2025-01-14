@@ -21,6 +21,9 @@ python uk.py
 
 python paris.py
 
+python sg.py
+
+
 
 
 sudo nano /etc/squid/squid.conf
